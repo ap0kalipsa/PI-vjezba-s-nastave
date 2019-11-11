@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" author="Rea Franković"/>
+</head>
+
+<body>
+<form method="POST" action="vjezba.php" >
+
+    <br>
+    <label for="ime" style="width: 70px; display: inline-block;"> Ime:</label>
+    <input id="ime" type="text" name="ime" maxlength="50" size="30" >
+    <br><br>
+
+    <label for="prezime" style="width: 70px; display: inline-block;">Prezime:</label>
+    <input id="prezime" type="text" name="prezime" maxlength="50" size="30" >
+    <br><br>
+
+    <label for="god" style="width: 160px; display: inline-block;" >Godina rodenja:</label>
+    <input id="god" type="date" name="god" maxlength="50" size="30" >
+    <br><br>
+
+    <label for="spol" style="width: 40px; display: inline-block;">Spol: </label>
+    <br>
+    <input type="radio" name="spol" value="z" />
+    <label for="z" >Zensko</label>
+    <br>
+    <input type="radio" name="spol" value="m" />
+    <label for="m" >Musko</label>
+    <br>
+    <input type="radio" name="spol" value="o" checked="checked"/>
+    <label for="o"  >Ostalo</label>
+    <br><br>
+
+    <label for="adresa" style="width: 70px; display: inline-block;"> Adresa:</label>
+    <input id="adresa" type="text" name="ime" maxlength="90" size="30" >
+    <br><br>
+
+    <label for="grad">U kojem gradu zivite?</label>
+    <select name="grad">
+        <option value="Zagreb">Zagreb</option>
+        <option value="Karlovac">Karlovac</option>
+        <option value="Osijek">Osijek</option>
+        <option value="Varazdin">Varazdin</option>
+        <option value="Split">Split</option>
+    </select>
+    <br><br>
+
+    <label for="skola">Zavrsena skola: </label>
+    <br>
+    <input type="radio" name="skola" value="gim" checked="checked"/>
+    <label for="gim">Gimnazija</label>
+    <br>
+    <input type="radio" name="skola" value="str"/>
+    <label for="str">Strukovna</label>
+    <br><br>
+
+    <label for="predmet">Hobiji:</label>
+    <br>
+    <select name="predmet[]" multiple="multiple">
+        <option value="crtanje">crtanje</option>
+        <option value="programiranje">programiranje</option>
+        <option value="sviranje instrumenta">sviranje instrumenta</option>
+        <option value="sport">sport</option>
+        <option value="skupljanje markica">skupljanje markica</option>
+    </select>
+    <br><br><br>
+
+    <label for="napomena" style="width: 70px; display: inline-block;"> Napomena:</label>
+    <br>
+    <textarea  rows="5" cols="45"></textarea>
+
+    <br><br><br>
+
+    <button type="submit" name="salji" value="Posalji" onclick="" style="	background-color:darkred; color:white; font-weight:bold; border:none; padding:10px 30px; border-radius:5px;"> Posalji </button>
+
+
+
+</form>
+</body>
+</html>
